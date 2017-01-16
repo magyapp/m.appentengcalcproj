@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+	<title>calculator</title>
+	<script type="text/javascript"></script>
+	<style type="text/css">
+		
+		
+		html {
+			height: 100%;
+			background: white;
+			background: radial-gradient(circle, #fff 20%, #ccc);
+			background-size: cover;
+			text-align: center;
+			background-image: url("clouds.gif");
+			background-position: cover;
+		}
+		.calculator {
+			width: 275px;
+			background: #7c8fad;
+			background: linear-gradient(#515863, #505254);
+			border-radius: 3px;
+			box-shadow: 0px 4px #353638, 0px 10px 15px rgba(0,0,0,0.2);
+		}
+		.calculator {
+			margin-left: 45%;
+			margin-top: 15%;
+			margin-bottom: 10%;
+		}
+		input[type=button]:hover {
+			background: #9c89f6;
+			box-shadow: 0px 4px #6b54d3;
+			color: white;
+		}
+		input[type=text] {
+			color: white;
+			line-height: 40px;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+			letter-spacing: 1px;
+		}
+		h1 {
+			font-family: font-family: 'Bungee Shade', cursive;
+			color: #f46242;
+			}
+		.foot {
+			
+			width: 100%;
+
+		}
+	
+	</style>
+</head>
+<body>
+	<div>
+	<header>
+		<h1><marquee>CALCULATOR</marquee></h1>
+	</header>
+
+	</div>
+	<form name="Calc" class="calculator">
+  		<table >
+    		<tr>
+      			<td>
+        			<input type="text" name="Input" placeholder="0" style="width: 254px; height: 60px; text-align: right; font-size: 30px; border-radius: 8px; margin: 3px; background: rgba(0,0,0,0.2); box-shadow: inset 0px 4px rgba(0,0,0,0.2)">
+        			<br>
+      			</td>
+    		</tr>
+    		<tr>
+      			<td>
+      				<div class="line_one">
+      				<input type="button" name="clear" value=" c " OnClick="Calc.Input.value = ''" style="width: 124px; font-size: 30px; border-radius: 8px; margin: 3px;">
+      				<input type="button" name="positive/negative" value="+/-" OnClick="Calc.Input.value = '-'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+      				
+      				<input type="button" name="div" value=" / " OnClick="Calc.Input.value += ' / '" style="width: 60px; font-size: 30px; border-radius: 8px;">
+      				</div>
+      				<br>
+      			
+
+      				<div class="line_two">
+       				<input type="button" name="seven" value=" 7 " OnClick="Calc.Input.value += '7'" style="width: 60px; font-size: 30px; border-radius: 8px; margin: 3px;">
+        			<input type="button" name="eight" value=" 8 " OnCLick="Calc.Input.value += '8'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+        			<input type="button" name="nine" value=" 9 " OnClick="Calc.Input.value += '9'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+        			<input type="button" name="times" value=" x " OnClick="Calc.Input.value += '*'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+        			</div>
+        			<br>
+        			<div class="line_three">
+        			<input type="button" name="four" value=" 4 " OnClick="Calc.Input.value += '4'" style="width: 60px; font-size: 30px; border-radius: 8px; margin: 3px;">
+        			<input type="button" name="five" value=" 5 " OnCLick="Calc.Input.value += '5'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+        			<input type="button" name="six" value=" 6 " OnClick="Calc.Input.value += '6'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+       				<input type="button" name="minus" value=" - " OnClick="Calc.Input.value += ' - '" style="width: 60px; font-size: 30px; border-radius: 8px;">
+       				</div>
+        			<br>
+        			<div class="line_four">
+        			<input type="button" name="one" value=" 1 " OnClick="Calc.Input.value += '1'" style="width: 60px; font-size: 30px; border-radius: 8px; margin: 3px;">
+        			<input type="button" name="two" value=" 2 " OnCLick="Calc.Input.value += '2'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+       				<input type="button" name="three" value=" 3 " OnClick="Calc.Input.value += '3'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+       				<input type="button" name="plus" value=" + " OnClick="Calc.Input.value += ' + '" style="width: 60px; font-size: 30px; border-radius: 8px;">
+       				</div>
+        			<br>
+
+       				<div class="line_five">
+        			<input type="button" name="zero" value=" 0 " OnClick="Calc.Input.value += '0'" style="width: 124px; font-size: 30px; border-radius: 8px;">
+        			<input type="button" name="decimal" value="." OnClick="Calc.Input.value +='.'" style="width: 60px; font-size: 30px; border-radius: 8px;">
+        			<input type="button" name="DoIt" value=" = " OnClick="Calc.Input.value = eval(Calc.Input.value)" style="width: 60px; font-size: 30px; border-radius: 8px;">
+       				</div>
+
+        			<br>
+      			</td>
+    		</tr>
+  		</table>
+	</form>		
+ 	<script type="text/javascript">
+ 		
+ 	</script>			
+ 	<div class="foot">
+ 		<footer>
+ 		<a href="https://www.tumblr.com/"><img src="tumblr.png"></a> <a href="https://www.youtube.com/"><img src="youtube.png"></a>   <a href="https://twitter.com/?lang=en"><img src="twitter.png"></a> <a href="https://www.facebook.com/?stype=lo&jlou=Afc9IGkYNF2tmQIcJtu7U_LYyKeqesUXLBz0YUASdo_onYt92KgN-fmUhogSapeA4SD1mXH2xppToPkdeQSqMpQY&smuh=53381&lh=Ac8BwQuSGkM0mpNj"><img src="facebook.png"></a> <a href="https://www.yahoo.com/"><img src="yahoo.png"></a>
+ 		</footer>
+ 	</div>
+</body>
+</html>
